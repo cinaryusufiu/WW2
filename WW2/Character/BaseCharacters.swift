@@ -7,9 +7,7 @@
 //
 
 import Foundation
-protocol BaseCharacterDelegate: class {
-    
-}
+
 class BaseCharacters : NSObject {
     
     var stringName : String
