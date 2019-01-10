@@ -9,7 +9,7 @@
 import Foundation
 
 enum CharacterType {
-    case hero
+    case defaultType
     case zombie
     case bug
     case lion
@@ -17,7 +17,7 @@ enum CharacterType {
     case zombieDog
 }
 class Helper: NSObject {
-    
+    // lokasyona gore siraladim.
     static func sortedCharacters(arr : [BaseCharacters]) -> [BaseCharacters]{
         if arr.isEmpty || arr.count == 0  {
             return [BaseCharacters]()
@@ -27,15 +27,12 @@ class Helper: NSObject {
         }
         return arrSorted
     }
-    
+    // ilk dusundugum yapida butun karakterleri tek bir arraydan yonetmek istemistim. o yuzden boyle bir method yazdim.
     static func removeHeroAllCharactersArray(arr : [BaseCharacters]) ->(Hero? , [BaseCharacters]?){
         
         if  arr.isEmpty || arr.count == 0 {
             return (nil ,nil)
         }
-        
-      //  sortedCharacters(arr: arr)
-        
         var arrEdit = [BaseCharacters]()
         var myHero : Hero?
         for  item in arr {
@@ -49,23 +46,23 @@ class Helper: NSObject {
         return (myHero , arrEdit)
     }
     
-    static func createRandomCharacters(type : CharacterType) -> AnyObject {
+    static func createRandomCharacters(index : Int) -> CharacterType {
+
+        switch index {
         
-        switch type {
-        case .hero:
-            return Hero(healthy: 500, location: 0, attackPoint: 10)
-        case .bug:
-            return Bug(healthy: 500, location: 0, attackPoint: 10)
-        case .lion:
-            return Lion(healthy: 500, location: 0, attackPoint: 10)
-        case .mutant:
-            return Mutant(healthy: 500, location: 0, attackPoint: 10)
-        case .zombie:
-            return Zombie(healthy: 500, location: 0, attackPoint: 10)
-        case .zombieDog:
-            return ZombieDog(healthy: 500, location: 0, attackPoint: 10)
+        case 0:
+            return .zombie
+        case 1:
+            return .bug
+        case 2:
+            return .lion
+        case 3:
+            return .mutant
+        case 4:
+            return .zombieDog
+        default:
+            return .defaultType
         }}
-    
 }
 
 

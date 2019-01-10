@@ -14,14 +14,12 @@ class WarManager: NSObject {
         super.init()
         
     }
-    func startFightWar(myHero : Hero , enemy : BaseCharacters){
+    func startFight(myHero : Hero , enemy : BaseCharacters){
         if myHero.isDied == true || enemy.isDied == true{
             return
         }
         
         myHero.location = enemy.location
-        
-        //  print("\(enemy.stringName) is Enemy")
         
         while true {
             myHero.healhtyDegrease(degrease: enemy.attactPoint , name: enemy.stringName)
@@ -31,7 +29,6 @@ class WarManager: NSObject {
                 break
             }
         }
-        
         if enemy.isDied == true {
             print("\(myHero.stringName) defeated \(enemy.stringName) with \(myHero.healthy - enemy.healthy) HP remaining")
         }
@@ -43,7 +40,6 @@ class WarManager: NSObject {
     }
     func startWarWithAllEnemy(resource : Int , myHero : Hero , enemyArray : [BaseCharacters]) -> Bool {
         
-        
         print("\(myHero.stringName) started journey with \(myHero.healthy) HP!")
         
         for item in enemyArray {
@@ -53,7 +49,7 @@ class WarManager: NSObject {
             if myHero.location >= resource {
                 return true
             }
-            startFightWar(myHero: myHero, enemy: item)
+            startFight(myHero: myHero, enemy: item)
         }
         return true
     }

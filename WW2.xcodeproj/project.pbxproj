@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C40567BB21E631F100688197 /* WarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40567BA21E631F100688197 /* WarManager.swift */; };
+		C461C53221E689F4007F6E84 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C461C53121E689F4007F6E84 /* Extension.swift */; };
 		C4EF136121E4B54100BEFF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF136021E4B54100BEFF18 /* AppDelegate.swift */; };
 		C4EF136321E4B54100BEFF18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF136221E4B54100BEFF18 /* ViewController.swift */; };
 		C4EF136621E4B54100BEFF18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EF136421E4B54100BEFF18 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		C40567BA21E631F100688197 /* WarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarManager.swift; sourceTree = "<group>"; };
+		C461C53121E689F4007F6E84 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C4EF135D21E4B54100BEFF18 /* WW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EF136021E4B54100BEFF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4EF136221E4B54100BEFF18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		C4EF138121E4C1A400BEFF18 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				C461C53121E689F4007F6E84 /* Extension.swift */,
 				C4EF138221E4C1C300BEFF18 /* Helper.swift */,
 				C40567BA21E631F100688197 /* WarManager.swift */,
 			);
@@ -181,6 +184,7 @@
 				C4EF136321E4B54100BEFF18 /* ViewController.swift in Sources */,
 				C4EF136121E4B54100BEFF18 /* AppDelegate.swift in Sources */,
 				C4EF137321E4B58000BEFF18 /* BaseCharacters.swift in Sources */,
+				C461C53221E689F4007F6E84 /* Extension.swift in Sources */,
 				C4EF137A21E4BCF800BEFF18 /* Lion.swift in Sources */,
 				C4EF137521E4B84D00BEFF18 /* Hero.swift in Sources */,
 				C4EF137E21E4BD5100BEFF18 /* Zombie.swift in Sources */,

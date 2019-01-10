@@ -11,11 +11,12 @@ import Foundation
 class Mutant: BaseCharacters {
     
     let name = "Mutant"
-  
+    
     init(healthy: Int , location : Int , attackPoint : Int) {
         super.init(name: self.name, healthy: healthy, location: location, attactPoint: attackPoint)
-}
+    }
     override func healhtyDegrease(degrease: Int, name: String) {
         super.healhtyDegrease(degrease: degrease, name: name)
     }
 }
+

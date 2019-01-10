@@ -11,7 +11,7 @@ import Foundation
 class Zombie: BaseCharacters {
     
     let name = "Zombie"
-   
+    
     init(healthy: Int , location : Int , attackPoint : Int) {
         super.init(name: self.name, healthy: healthy, location: location, attactPoint: attackPoint)
     }
@@ -19,3 +19,4 @@ class Zombie: BaseCharacters {
         super.healhtyDegrease(degrease: degrease, name: name)
     }
 }
+

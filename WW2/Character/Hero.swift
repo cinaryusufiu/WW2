@@ -11,6 +11,7 @@ import Foundation
 class Hero: BaseCharacters {
    
     let name = "Hero"
+    
     init(healthy: Int , location : Int , attackPoint : Int) {
         super.init(name: self.name, healthy: healthy, location: location, attactPoint: attackPoint)
     }
